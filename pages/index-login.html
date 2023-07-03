@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 85%;
+        }
+
+        .flex-box {
+            width: 40px;
+            height: 40px;
+            color: black;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 10px;
+            border: 1px solid #c7c4c4;
+            margin-right: 10px;
+        }
+
+        .flex-box-category {
+            width: 100px;
+            height: 40px;
+            color: black;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 10px;
+            border: 1px solid #c7c4c4;
+            margin-right: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Home</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a href="/pages/index-login.html">
+                    <img src="../assets/img/logo.png" alt="logo"
+                        style="display: inline;margin-left: 0;margin-right: auto;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item ml-2 form-inline row justify-content-center">
+                            <input id="searchbox" class="form-control mr-sm-2 mt-1" type="search" placeholder="Search"
+                                aria-label="Search" />
+                            <img class="searchLogo" src="/assets/img/search-logo.png" alt="" />
+                            <img id="homeFilter" class="mr-4" src="/assets/img/filter.png" alt="filter"
+                                data-toggle="modal" data-target="#exampleModal" />
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <a href="/pages/mybag.html">
+                            <img style="margin-right: 40px;" src="../assets/img/cart.png" alt="cart" /></a>
+                        <img style="margin-right: 40px;" src="../assets/img/bell.png" alt="bell" />
+                        <a href="/pages/chatv1.html"><img style="margin-right: 40px;" src="../assets/img/mail.png"
+                                alt="mail" /></a>
+                        <a href="/pages/profile-account.html"><img class="mr-4" src="../assets/img/user.png" alt="cart"
+                                style="border-radius: 50%; width: 30px;" /></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container" style="margin-top: 100px;">
+                <div class="row" style="justify-content: center;">
+                    <div id="carouselTopControls" class="carousel slide" data-ride="carousel" style="
+                        margin:30px 0 0 0; width: 1800px;">
+                        <div class="carousel-inner container-fluid ">
+                            <div class="carousel-item active">
+                                <section style="display: flex; justify-content: space-between">
+                                    <div>
+                                        <img src="/assets/img/Card Promotion.png" class="d-block w-100" />
+                                    </div>
+                                    <div>
+                                        <img src="/assets/img/Card Promotion 2.png" class="d-block w-100" />
+                                    </div>
+                                    <div>
+                                        <img src="/assets/img/Card Promotion.png" class="d-block w-100" />
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="carousel-item">
+                                <section style="display: flex; justify-content: space-between">
+                                    <div>
+                                        <img src="/assets/img/Card Promotion.png" class="d-block w-100" />
+                                    </div>
+                                    <div>
+                                        <img src="/assets/img/Card Promotion 2.png" class="d-block w-100" />
+                                    </div>
+                                    <div>
+                                        <img src="/assets/img/Card Promotion.png" class="d-block w-100" />
+                                    </div>
+                            </div>
+        </section>
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselTopControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselTopControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+        </div>
+        </div>
+        </section>
+        <section class="mt-5">
+            <div class="container">
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Filter</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-12 mb-2">
+                                        <p class="font-weight-bold text-body">Color</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="color-groups">
+                                            <div class="color color-white active-color"></div>
+                                            <div class="color color-black"></div>
+                                            <div class="color color-yellow"></div>
+                                            <div class="color color-blue"></div>
+                                            <div class="color color-red"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p class="font-weight-bold text-body">Sizes</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div style="display: flex;">
+                                            <div class="flex-box">XS</div>
+                                            <div class="flex-box" style="background: #DB3022; color: white; border: 0;">
+                                                S</div>
+                                            <div class="flex-box" style="background: #DB3022; color: white; border: 0;">
+                                                M</div>
+                                            <div class=" flex-box">L</div>
+                                            <div class="flex-box">XL</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mt-3">
+                                        <p class="font-weight-bold text-body">Category</p>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div style="display: flex;">
+                                            <div class="flex-box-category"
+                                                style="background: #DB3022; color: white; border: 0;">All</div>
+                                            <div class=" flex-box-category">
+                                                Women</div>
+                                            <div class="flex-box-category">
+                                                Men</div>
+                                            <div class=" flex-box-category">Boys</div>
+                                            <div class="flex-box-category">Girl</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mt-3">
+                                        <p class="font-weight-bold text-body">Brand</p>
+                                    </div>
+                                    <div class="col-md-12">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn border rounded-pill"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn rounded-pill btn-danger">Save
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="">Category</h2>
+                <p class="">What are you currently looking for?</p>
+                <div class="container-fluid" style="padding-left: 0px; padding-right: 0px;">
+                    <div class="row" style="justify-content: center;">
+                        <div id="carouselCategoryControls" class="carousel slide" data-ride="carousel" style="
+                        margin:30px 0 0 0; width: 1800px;">
+                            <div class="carousel-inner container-fluid ">
+                                <div class="carousel-item active">
+                                    <section style="display: flex; justify-content: space-between">
+                                        <div class="f-category">
+                                            <img src="/assets/img/Group 1229.png" class="d-block w-100" />
+                                        </div>
+                                        <div class="f-category">
+                                            <img src="/assets/img/Group 1230.png" class="d-block w-100" />
+                                        </div>
+                                        <div class="f-category">
+                                            <img src="/assets/img/Group 1231.png" class="d-block w-100" />
+                                        </div>
+                                        <div class="f-category">
+                                            <img src="/assets/img/Group 1232.png" class="d-block w-100" />
+                                        </div>
+                                        <div class="f-category">
+                                            <img src="/assets/img/Group 1233.png" class="d-block w-100" />
+                                        </div>
+                                        <div class="f-category">
+                                            <img src="/assets/img/Group 1240.png" class="d-block w-100" />
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="carousel-item">
+                                    <section style="display: flex; justify-content: space-between">
+                                        <div class="f-category">
+                                            <img src="/assets/img/Group 1240.png" class="d-block w-100" />
+                                        </div>
+                                        <div class="f-category">
+                                            <img src="/assets/img/Group 1235.png" class="d-block w-100" />
+                                        </div>
+                                        <div class="f-category">
+                                            <img src="/assets/img/Group 1236.png" class="d-block w-100" />
+                                        </div>
+                                        <div class="f-category">
+                                            <img src="/assets/img/Group 1238.png" class="d-block w-100" />
+                                        </div>
+                                        <div class="f-category">
+                                            <img src="/assets/img/Group 1241.png" class="d-block w-100" />
+                                        </div>
+                                        <div class="f-category">
+                                            <img src="/assets/img/Group 1229.png" class="d-block w-100" />
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselCategoryControls" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselCategoryControls" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container">
+                <h2 class="">New</h2>
+                <p class="">You've never seen before!</p>
+                <div class="mt-5">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="/assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="/assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-5">
+            <div class="container">
+                <h2 class="">Populer</h2>
+                <p class="">Find cloths that are you tranding recently!</p>
+                <div class="mt-5">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card ">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-6 mb-5">
+                            <div class="border rounded product">
+                                <img class="w-100" src="../assets/img/cloth.png" alt="cloth" />
+                                <div class="p-2">
+                                    <h5 class="card-title price-card">Men's formal suit - Black & White</h5>
+                                    <h5 class="text-danger price-card">Rp. 250.000</h5>
+                                    <img src="../assets/img/stars.png" alt="stars" style="margin-left: 0;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

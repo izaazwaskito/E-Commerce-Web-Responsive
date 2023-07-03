@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 85%;
+        }
+
+        #searchbox {
+            border-radius: 25px;
+            width: 900px;
+        }
+
+        .searchLogo {
+            margin-left: -40px;
+            width: 20px;
+            height: 20px;
+        }
+
+        #homeFilter {
+            margin-left: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>My Bag</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a href="/pages/index-login.html">
+                    <img src="../assets/img/logo.png" alt="logo"
+                        style="display: inline;margin-left: 0;margin-right: auto;"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item ml-2 form-inline row justify-content-center">
+                            <input id="searchbox" class="form-control mr-sm-2 mt-1" type="search" placeholder="Search"
+                                aria-label="Search" />
+                            <img class="searchLogo" src="/assets/img/search-logo.png" alt="" />
+                            <img id="homeFilter" class="mr-4" src="/assets/img/filter.png" alt="filter" />
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <a href="/pages/mybag.html">
+                            <img style="margin-right: 40px;" src="../assets/img/cart.png" alt="cart" /></a>
+                        <img style="margin-right: 40px;" src="../assets/img/bell.png" alt="bell" />
+                        <a href="/pages/chatv1.html"><img style="margin-right: 40px;" src="../assets/img/mail.png"
+                                alt="mail" /></a>
+                        <a href="/pages/profile-account.html"><img class="mr-4" src="../assets/img/user.png" alt="cart"
+                                style="border-radius: 50%; width: 30px;" /></a>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <section>
+            <div>
+                <h1 class="h1-small" style=" font-weight: bold;">My bag</h1>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="row mt-2"
+                        style="box-shadow: 0px 6px 40px 20px rgba(173, 173, 173, .25); border-radius: 5px;"
+                        id="border-big">
+                        <div class="col-md-1">
+                            <input class="form-check-input" style="margin:20px 20px;" type="checkbox" value=""
+                                id="flexCheckDefault">
+                        </div>
+                        <div class="col-md-9 col-9">
+                            <p style="padding-top: 15px; color: black; font-weight: bold;" id="p-small">Select all items
+                                (2 items
+                                selected)</p>
+                        </div>
+                        <div class="col-md-2 col-2">
+                            <p class="mt-3"
+                                style="color: #DB3022; font-weight: bold; text-align: right; padding-right: 10px;">
+                                Delete</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2"
+                        style="box-shadow: 0px 6px 40px 20px rgba(173, 173, 173, .25); border-radius: 5px;"
+                        id="border-big">
+                        <div class="col-md-1">
+                            <input class="form-check-input" style="margin:30px 20px;" type="checkbox" value=""
+                                id="flexCheckDefault">
+                        </div>
+                        <div class="col-md-7" id="detail-small">
+                            <img src="/assets/img/cloth.png"
+                                style="float: left; border-radius: 8px; width: 69px; height: 59px; object-fit: cover; margin: 10px 0px;"
+                                class="mr-2" />
+                            <h6 style="padding-top: 20px; font-weight: bold;">Men's formal suit - Black</h6>
+                            <p style="font-size: small; margin-top: -10px;">Zalora Cloth</p>
+                        </div>
+                        <div class="col-md-2 col-7">
+                            <div class="color-groups mt-4 ml-3">
+                                <div class="color color-white text-center" style="font-size: 20px; line-height: 35px;">-
+                                </div>
+                                <div class="color color text-center" style="font-size: 14px; line-height: 37px;">1
+                                </div>
+                                <div class="color color-white text-center" style="font-size: 20px; line-height: 35px;">+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-5 col-3">
+                            <p class="mt-3" style="color: #000000; font-weight: bold; text-align: left;">Rp. 250.000</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2"
+                        style="box-shadow: 0px 6px 40px 20px rgba(173, 173, 173, .25); border-radius: 5px;"
+                        id="border-big">
+                        <div class="col-md-1">
+                            <input class="form-check-input" style="margin:30px 20px;" type="checkbox" value=""
+                                id="flexCheckDefault">
+                        </div>
+                        <div class="col-md-7" id="detail-small">
+                            <img src="/assets/img/cloth.png"
+                                style="float: left; border-radius: 8px; width: 69px; height: 59px; object-fit: cover; margin: 10px 0px;"
+                                class="mr-2" />
+                            <h6 style="padding-top: 20px; font-weight: bold;">Men's formal suit - Black</h6>
+                            <p style="font-size: small; margin-top: -10px;">Zalora Cloth</p>
+                        </div>
+                        <div class="col-md-2 col-7">
+                            <div class="color-groups mt-4 ml-3">
+                                <div class="color color-white text-center" style="font-size: 20px; line-height: 35px;">-
+                                </div>
+                                <div class="color color text-center" style="font-size: 14px; line-height: 37px;">1
+                                </div>
+                                <div class="color color-white text-center" style="font-size: 20px; line-height: 35px;">+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-5 col-3">
+                            <p class="mt-3" style="color: #000000; font-weight: bold; text-align: left;">Rp. 250.000</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" id="border-right-big">
+                    <div class="col-md-12 mt-2" id="border-right-inside-big"
+                        style="box-shadow: 0px 6px 40px 20px rgba(173, 173, 173, .25); border-radius: 5px;">
+                        <div class="row">
+                            <div class="col-md-12 ">
+                                <p style="padding-top: 15px; color: black; font-weight: bold;">Shopping summary</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7 col-6">
+                                <p style="padding-top: 15px; color: #9B9B9B; font-weight: bold;">Total price</p>
+                            </div>
+                            <div class="col-md-5 col-6">
+                                <p
+                                    style="color: #000000; font-weight: bold; text-align: right; padding: 15px 10px 0 0;">
+                                    Rp. 500.000</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <a href="/pages/checkout.html">
+                                    <button type="button" class="btn btn-danger rounded-pill btn-cm"
+                                        id="btn-danger-small">Buy Now</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

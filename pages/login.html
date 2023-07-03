@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Login</title>
+    <style>
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 450px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .nav-pills .nav-link.active,
+        .nav-pills .show>.nav-link {
+            color: #fcfcfc;
+            background-color: #DB3022;
+            border: 1px solid #DB3022;
+        }
+
+        .btn-danger {
+            color: #fff;
+            background-color: #DB3022;
+            border-color: #DB3022;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="../assets/img/logo.png" alt="logo" />
+        <p class="text-center py-3" style="font-weight: bold; margin: 25px 0px;">Please login with your account
+        <ul class=" nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="customer-tab" data-toggle="tab" data-target="#customer"
+                    type="button" role="tab" aria-controls="home" aria-selected="true"
+                    style="font-size: 14px">Customer</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="seller-tab" data-toggle="tab" data-target="#seller" type="button"
+                    role="tab" aria-controls="profile" aria-selected="false" style="font-size: 14px;">Seller</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="customer" role="tabpanel" aria-labelledby="customer-tab">
+                <form>
+                    <div class="form-group" style="height: 36px;">
+                        <label for="formGroupExampleInput2"></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2"></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+                    </div>
+                    <div class="form-group" style="margin-top: 10px;">
+                        <a href="/pages/resetpassword.html" class="text-danger float-right py-2"
+                            style="font-size: 14px;">Forgot password?</a>
+                        <a href="/pages/index-login.html">
+                            <button type="button" class="btn btn-danger btn-block rounded-pill">PRIMARY</button></a>
+                        <p class="text-regis">Don't have a Tokopedia account?<a href="/pages/signup.html"
+                                class="text-danger">Register</a></p>
+                    </div>
+                </form>
+            </div>
+            <div class="tab-pane fade" id="seller" role="tabpanel" aria-labelledby="seller-tab">
+                <form>
+                    <div class="form-group" style="height: 36px;">
+                        <label for="formGroupExampleInput2"></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="formGroupExampleInput2"></label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Password">
+                    </div>
+                    <div class="form-group" style="margin-top: 10px;">
+                        <a href="/pages/resetpassword.html" class="text-danger float-right py-2"
+                            style="font-size: 14px;">Forgot password?</a>
+                        <a href="/pages/index-login.html">
+                            <button type="button" class="btn btn-danger btn-block rounded-pill">PRIMARY</button></a>
+                        <p class="text-regis">Don't have a Tokopedia account?<a href="/pages/signup.html"
+                                class="text-danger">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
